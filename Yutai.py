@@ -10,13 +10,13 @@ st.markdown(
     """
     <style>
     @font-face {
-        font-family: 'Mincho';
-        src: local('Yu Mincho'), local('游明朝'), local('MS Mincho'), local('Hiragino Mincho ProN'), serif;
+        font-family: 'Gothic';
+        src: local('Yu Gothic'), local('游ゴシック'), local('MS Gothic'), local('Hiragino Kaku Gothic ProN'), sans-serif;
     }
     body, p {
         background-color: black;
         color: white;
-        font-family: 'Mincho', serif;
+        font-family: 'Gothic', sans-serif;
         margin: 0;
         white-space: pre-wrap;
     }
@@ -42,7 +42,7 @@ text =
 
 怪物の死後　恋愛は存在しないということになり踊られた暴力的で透明なダンス
 
-これが映画だとしたらエンドロールではないかと聞かれる　ちがうと思います答える
+これが映画だとしたらエンドロールではないかと聞かれる　ちがうと思いますと答える
 
 つぎに生まれたら足よりも海の方が役に立つよね　そうかな　そうかも　駅が見えてきた
 
@@ -55,9 +55,6 @@ for char in text:
     sys.stdout.flush()
     time.sleep(0.2)
 '''
-
-# テキスト内の全角スペースを半角スペースに置き換え
-text = text.replace('　', ' ')
 
 # テキスト表示のプレースホルダー
 placeholder = st.empty()
