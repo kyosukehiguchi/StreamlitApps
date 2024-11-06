@@ -1,6 +1,9 @@
 import streamlit as st
 import random
 
+# タイトルを設定
+st.set_page_config(page_title="Text Randomizer")
+
 def randomize_sentences(text):
     # 100万字までの制限
     if len(text) > 1_000_000:
